@@ -66,23 +66,80 @@ PUT,PATCH,DELETEなど他にもある
 ***
 
 ## リクエストヘッダーとは
-リクエストの構成の一部<br/>
+HTTPリクエスト(リクエストライン、ヘッダー、メッセージボディ)の構成の一部<br/>
+メッセージの内容には関連しない<br/>
+ブラウザからwebサーバーに伝えたい情報<br/>
+フィールド名:内容で表現  
+
+<img width="184" alt="スクリーンショット 2023-11-05 23 24 55" src="https://github.com/chie-hira/web_basics/assets/148871501/dc27512a-5be1-4bd3-8c06-4bc22d4c7532">
+
+
 ### HTTPステータスコードとは
-それぞれの意味
-* 200
-* 201
-* 400
-* 404
-* 500
+HTTPリクエストの結果を示す3桁の数字　　
+
+| コード | 意味 |
+| ---- | ---- |
+| 200 |　OK,成功 |
+| 201 |　Created,リソースの作成成功 |
+| 400 |　Bad Request,リクエストの内容が変 |
+| 404 |　Not Found,リソースが見つからない |
+| 500 |　Internal Server Error,サーバーエラー |
+
 ***
 
 ### レスポンスヘッダーとは
+HTTPレスポンス(ステータスライン、ヘッダー、レスポンスボディ)の構成の一部<br/>
+メッセージの内容には関連しない<br/>
+HTTPレスポンスはHTTPリクエストに対する返事<br/>
+ステータスラインに書ききれないレスポンスの情報<br/>
+フィールド名:内容で表現  
+
+<img width="180" alt="スクリーンショット 2023-11-05 23 49 15" src="https://github.com/chie-hira/web_basics/assets/148871501/a3e15d86-14d1-4853-a668-dcdbe2464d7f">
+
+
 ### レスポンスボディとは
+HTTPレスポンス(ステータスライン、ヘッダー、レスポンスボディ)の構成の一部<br/>
+メッセージの内容部分<br/>
+HTML部分
+
 ***
 
 ### JSONとは
-### JSONを使ってデータを表現
-*ユーザー情報を表現
-*商品情報を表現
+ファイル形式の1つ<br/>
+JavaAcriptObjectNotation<br/>
+データのやり取りをするときの書き方　　
 
+例)<br/>
+```json
+{
+  "bohebohe": [ 1, 2 ],
+  "piyopiyo": {
+  "piyota": [ "21", "lovely" ],
+  "piyoko": "sama"
+  }
+}
+```
+
+### JSONを使ってデータを表現
+例1) ユーザー情報を表現
+```json
+{
+  "name": "中田",
+  "age": 35,
+  "location": "東京都",
+  "hobby": "登山",
+  "birthdate": "2000-09-09"
+}
+```
+
+例2) 商品情報を表現
+```json
+{
+  "productName": "Example Product",
+  "price": 49.99,
+  "inStock": true,
+  "category": "Electronics",
+  "description": "This is an example product description."
+}
+```
 
