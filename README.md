@@ -1,6 +1,6 @@
 # web_basics
 ## URLとは
-ホームページの住所<br/>
+ホームページの**住所**<br/>
 Uniform Resource Locator<br/>
 web上で取得したいページなどの情報源を示すための表記方法  
 
@@ -24,12 +24,12 @@ webのページそのものは変わらないが表示する内容を指定す�
 パスパラメータより階層が下のイメージ
 
 例)<br/>
-https:// query.jp/?param1=hoge1&param2=hoge2<br/>
+https:// query.jp/**?param1=hoge1&param2=hoge2**<br/>
 
 | 部位 | 意味 |
 | ---- | ---- |
 | https:// query.jp | URL(クエリ文字列以外の部分) |
-| ?param1=hoge1&param2=hoge2 | クエリ文字列 |
+| ?param1=hoge1&param2=hoge2 | **クエリ文字列** |
 
 ## パス変数とは
 パスパラメータ<br/>
@@ -37,11 +37,11 @@ Webのページそのものを指定する<br/>
 クエリパラメータより階層が上のイメージ
 
 例)<br/>
-https:// query.jp/category/{categry_id}/?param1=hoge1&param2=hoge2<br/>
+https:// query.jp/category/**{categry_id}**/?param1=hoge1&param2=hoge2<br/>
 
 | 部位 | 意味 |
 | ---- | ---- |
-| {categry_id} | パス変数 |
+| {categry_id} | **パス変数** |
 | ?param1=hoge1&param2=hoge2 | クエリ文字列 |
 
 
@@ -107,7 +107,7 @@ HTML部分
 ### JSONとは
 ファイル形式の1つ<br/>
 JavaAcriptObjectNotation<br/>
-データのやり取りをするときの書き方　　
+データのやり取りをするときの書き方の1つ  　
 
 例)<br/>
 ```json
